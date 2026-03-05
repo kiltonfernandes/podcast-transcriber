@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Podcast Transcriber</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Podcast Transcriber</h1>
+    <label class="file-control">
+      <span>Upload audio</span>
+      <input type="file" id="audio" accept=".mp3,.wav,.m4a" />
+    </label>
+    <button id="transcribe">Transcribe</button>
+    <p id="status" class="status">Pick an audio file to begin.</p>
+    <textarea id="transcript" placeholder="Transcript will appear here" readonly></textarea>
+    <div class="downloads">
+      <a id="download-txt" class="download disabled" aria-disabled="true">Download transcript.txt</a>
+      <a id="download-srt" class="download disabled" aria-disabled="true">Download transcript.srt</a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
