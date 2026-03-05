@@ -1,1 +1,2 @@
-openai-whisper\nffmpeg-python
+openai-whisper
+ffmpeg-python
